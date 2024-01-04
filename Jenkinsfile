@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Maven'){
             steps {
-                sh 'mvn clean'
+                sh 'mvn spring-boot:run'
             }
         }
          stage('Deploy') {
